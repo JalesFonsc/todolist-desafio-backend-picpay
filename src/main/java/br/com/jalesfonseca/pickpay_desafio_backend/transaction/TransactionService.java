@@ -45,7 +45,7 @@ public class TransactionService {
         // 5 - Call external services
         authorizerService.authorize(transaction);
         // 6 - Notifications
-        notificationService.notify(transaction);
+        notificationService.notify(newTransaction);
         
         return newTransaction;
     }
