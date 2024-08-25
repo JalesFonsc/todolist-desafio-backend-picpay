@@ -23,8 +23,6 @@ public class NotificationConsumer {
     public void receiveNotification(Transaction transaction) {
         LOGGER.info("Notifying transaction {}...", transaction);
 
-        System.out.println("[JALES]" + " Antes do response");
-
         var response = restClient
             .get()
             .retrieve()
@@ -34,9 +32,6 @@ public class NotificationConsumer {
             System.out.println("Dentro do erro");
             throw new NotificationExpection("Error sending notification!");
         }
-
-        System.out.println("[JALES]" + " Depois do response");
-
 
         LOGGER.info("Notification has been sent {}...", response.getBody());
 
