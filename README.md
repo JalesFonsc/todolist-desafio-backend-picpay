@@ -35,9 +35,7 @@ docker-compose up
 
 ![Desenho de Arquitetura](https://github.com/user-attachments/assets/9ab5d0d8-951c-4247-9a15-0cff95a192ed)
 
-
-!![Diagrama de Atividades](https://github.com/user-attachments/assets/d441be23-e744-4f01-81ef-84681f482c71)
-)
+![Diagrama de Atividades](https://github.com/user-attachments/assets/d441be23-e744-4f01-81ef-84681f482c71)
 
 ## API
 
