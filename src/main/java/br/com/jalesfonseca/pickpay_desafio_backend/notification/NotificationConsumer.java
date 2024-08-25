@@ -11,7 +11,7 @@ import br.com.jalesfonseca.pickpay_desafio_backend.transaction.Transaction;
 @Service
 public class NotificationConsumer {
     private static final Logger LOGGER = LoggerFactory.getLogger(NotificationConsumer.class);
-    private RestClient restClient;
+    private final RestClient restClient;
 
     public NotificationConsumer(RestClient.Builder builder) {
         this.restClient = builder
@@ -29,7 +29,6 @@ public class NotificationConsumer {
             .toEntity(Notification.class);
 
         if (response.getStatusCode().isError() || !response.getBody().isStatusSuccess()) {
-            System.out.println("Dentro do erro");
             throw new NotificationExpection("Error sending notification!");
         }
 

@@ -6,6 +6,6 @@ public record Notification(
 ) {
     
     public boolean isStatusSuccess() {
-        return status.equals("fail");
+        return status.equals("success");
     }
 }
